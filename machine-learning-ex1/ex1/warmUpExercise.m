@@ -9,12 +9,19 @@ A = [];
 %               represent the return values (at the top of the file)
 %               and then set them accordingly. 
 
+for i = 1:5,
+	row = [];
+	for j = 1:5,
+		if i == j,
+			row = [row 1];
+		else,
+			row = [row 0];
+		end;
+	end;
+	A = [A; row];
+end;
 
-
-
-
-
-
+% or simply A = eye(5)
 % ===========================================
 
 
