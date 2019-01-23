@@ -13,9 +13,8 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
-
-
+% X: [m n+1], theta: [n+1 1], y: [m 1]
+J = (X * theta - y)' * (X * theta - y) / 2 / m;
 
 % =========================================================================
 
